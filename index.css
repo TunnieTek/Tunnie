@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;600&display=swap');
+:root{
+    --primary-color: #0f0c29;
+    --secondary-color: #302b63;
+    --third-color: #24243e;
+    --color: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+/* Header */
+header{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background-size: 400% 400%;
+    -webkit-animation: Wave 10s ease infinite;
+    -moz-animation: Wave 10s ease infinite;
+    animation: Wave 5s ease infinite;
+    color: var(--color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+header h1{
+    font-size: 100px;
+}
+
+@-webkit-keyframes Wave {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.textrun{
+    margin: 0 auto;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 1%;
+    animation: typing 15s steps(200, end), blink-caret .5s step-end;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .3em solid none;
+    font-family: monospace;
+    text-align: center;
+}
+
+@keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
+}
+
+header form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header input{
+    width: 15%;
+    padding: 0.5%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+header a{
+    padding: 0.5%;
+    text-decoration: none;
+    color: var(--color);
+    border: 1px solid var(--color);
+    border-radius: 10px;
+    margin-left: 1%;
+}
+
+header a:hover{
+    background: var(--color);
+    color: var(--primary-color) !important;
+}
+
+
+
+/* Content nè */
+content{
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    background-size: 400% 400%;
+    -webkit-animation: Wave 10s ease infinite;
+    -moz-animation: Wave 10s ease infinite;
+    animation: Wave 5s ease infinite;
+    color: var(--color);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 93.5vh;
+    width: 100%;
+    text-align: center;
+}
+
+
+.single-project{
+    padding: 10%;
+}
+
+.single-project i{
+    font-size: 200%;
+    margin: 10%;
+}
+
+.single-project img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.single-project button{
+    width: 50%;
+    padding: 0 !important;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background: var(--color);
+    color: var(--primary-color);
+    margin: 5%;
+}
+
+.single-project .btn-i i{
+    font-size: 100%;
+    margin: 10%;
+}
+
+.btn-i:hover{
+    color: var(--color);
+    background: var(--primary-color) !important;
+}
